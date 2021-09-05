@@ -1,4 +1,4 @@
-name: Module A release-drafter
+name: release-drafter
 
 on:
   workflow_dispatch: {}
@@ -8,9 +8,19 @@ jobs:
     name: Module A draft release
     runs-on: ubuntu-20.04
     steps:
-      - uses: blast-hardcheese/release-drafter@v5.16.1
+      - uses: blast-hardcheese/release-drafter@v5.16.2
         with:
           tag-prefix: modulea-v
           include-paths: modules/module-a
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  moduleb-draft-release:
+    name: Module B draft release
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: blast-hardcheese/release-drafter@v5.16.2
+        with:
+          tag-prefix: moduleb-v
+          include-paths: modules/module-b
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
