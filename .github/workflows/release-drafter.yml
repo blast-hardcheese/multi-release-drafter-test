@@ -1,0 +1,14 @@
+name: Module A release-drafter
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  modulea-draft-release:
+    name: Module A draft release
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: blast-hardcheese/release-drafter@v5.16.1
+        with:
+          tag-prefix: modulea-v
+          include-paths: modules/module-a
