@@ -12,3 +12,5 @@ jobs:
         with:
           tag-prefix: modulea-v
           include-paths: modules/module-a
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
