@@ -12,15 +12,6 @@ jobs:
         with:
           tag-prefix: modulea-v
           include-paths: modules/module-a
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  moduleb-draft-release:
-    name: Module B draft release
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: blast-hardcheese/release-drafter@v5.16.2
-        with:
-          tag-prefix: moduleb-v
-          include-paths: modules/module-b
+          config-name: modulea-release-drafter.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
