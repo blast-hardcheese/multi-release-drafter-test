@@ -1,5 +1,5 @@
-name-template: 'modulea-v$RESOLVED_VERSION'
-tag-template: 'modulea-v$RESOLVED_VERSION'
+name-template: 'moduleb-v$RESOLVED_VERSION'
+tag-template: 'moduleb-v$RESOLVED_VERSION'
 categories:
   - title: '🚀 Features'
     labels:
