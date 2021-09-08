@@ -8,7 +8,7 @@ jobs:
     name: Module A draft release
     runs-on: ubuntu-20.04
     steps:
-      - uses: blast-hardcheese/release-drafter@v5.16.15
+      - uses: blast-hardcheese/release-drafter@v5.16.16
         with:
           tag-prefix: modulea-v
           include-paths: modules/module-a
@@ -19,7 +19,7 @@ jobs:
     name: Module B draft release
     runs-on: ubuntu-20.04
     steps:
-      - uses: blast-hardcheese/release-drafter@v5.16.15
+      - uses: blast-hardcheese/release-drafter@v5.16.16
         with:
           tag-prefix: moduleb-v
           include-paths: modules/module-b
