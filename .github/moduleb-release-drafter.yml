@@ -1,5 +1,8 @@
 name-template: 'moduleb-v$RESOLVED_VERSION'
 tag-template: 'moduleb-v$RESOLVED_VERSION'
+tag-prefix: moduleb-v
+include-paths:
+  - modules/module-b
 categories:
   - title: '🚀 Features'
     labels:

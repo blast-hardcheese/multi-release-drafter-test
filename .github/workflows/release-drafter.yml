@@ -10,8 +10,6 @@ jobs:
     steps:
       - uses: blast-hardcheese/release-drafter@v5.16.37
         with:
-          tag-prefix: modulea-v
-          include-paths: modules/module-a
           config-name: modulea-release-drafter.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -21,8 +19,6 @@ jobs:
     steps:
       - uses: blast-hardcheese/release-drafter@v5.16.37
         with:
-          tag-prefix: moduleb-v
-          include-paths: modules/module-b
           config-name: moduleb-release-drafter.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
