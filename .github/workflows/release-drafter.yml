@@ -1,7 +1,11 @@
-name: release-drafter
+name: "release-drafter: ${{ github.event.deployment.payload.label }}"
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      label:
+        description: Label to interpolate
+        required: true
 
 jobs:
   modulea-draft-release:
